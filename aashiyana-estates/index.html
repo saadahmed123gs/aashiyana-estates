@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aashiyana Estates — Homes across Karachi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 20 L20 8 L34 20"/>
+        <path d="M10 20 V33 H30 V20"/>
+        <path d="M17 33 V24 H23 V33"/>
+      </svg>
+      Aashiyana Estates
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="listings.html">Listings</a>
+      <a href="property.html">Featured</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn secondary">Enquire</a>
+  </div>
+</header>
+ 
+<section class="hero">
+  <div class="shape-field">
+    <svg class="floating-shape shape-1" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/></svg>
+    <svg class="floating-shape dashed shape-2" viewBox="0 0 100 100"><rect x="4" y="4" width="92" height="92"/></svg>
+    <svg class="floating-shape shape-3" viewBox="0 0 100 100"><path d="M10 90 L50 10 L90 90 Z"/></svg>
+    <svg class="floating-shape dashed shape-4" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/></svg>
+    <svg class="floating-shape shape-5" viewBox="0 0 100 100"><rect x="4" y="4" width="92" height="92"/></svg>
+  </div>
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="hero-copy">
+      <div class="eyebrow">Karachi · Est. plans since 2019</div>
+      <h1>Every home starts as a <em>drawing</em> before it becomes an address.</h1>
+      <p class="lede">Aashiyana Estates lists verified homes across Karachi — from DHA bungalows to Clifton sea-view flats — with the plot lines, room counts and paperwork laid out plainly, before you ever visit.</p>
+ 
+      <div class="search-bar">
+        <div class="field">
+          <label for="loc">Location</label>
+          <select id="loc">
+            <option value="">Any area</option>
+            <option>DHA Phase 6</option>
+            <option>Clifton</option>
+            <option>Gulshan-e-Iqbal</option>
+            <option>Bahria Town</option>
+            <option>North Nazimabad</option>
+            <option>Defence</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="type">Property type</label>
+          <select id="type">
+            <option value="">Any type</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Bungalow</option>
+            <option>Penthouse</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="budget">Budget</label>
+          <select id="budget">
+            <option value="">Any budget</option>
+            <option>Under PKR 2 Crore</option>
+            <option>PKR 2–4 Crore</option>
+            <option>Above PKR 4 Crore</option>
+          </select>
+        </div>
+        <button class="btn" id="searchBtn">Search</button>
+      </div>
+    </div>
+ 
+    <div class="hero-art">
+      <div class="blueprint-bg" style="overflow:hidden;">
+        <img src="https://images.pexels.com/photos/8134820/pexels-photo-8134820.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Modern minimalist house exterior" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Featured plots</div>
+        <h2>Homes on the market this week</h2>
+      </div>
+      <div class="count">06 of 24 listings</div>
+    </div>
+ 
+    <div class="card-grid">
+ 
+      <a href="property.html" class="property-card reveal">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587880/pexels-photo-7587880.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern villa exterior with green lawn">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 4.5 Crore</div>
+          <div class="card-title">Modern Villa, DHA Phase 6</div>
+          <div class="card-location">📍 DHA Phase 6, Karachi</div>
+          <div class="card-specs">
+            <span><strong>350</strong> sq yd</span>
+            <span><strong>5</strong> bed</span>
+            <span><strong>4</strong> bath</span>
+          </div>
+        </div>
+      </a>
+ 
+      <a href="property.html" class="property-card reveal">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587882/pexels-photo-7587882.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleek modern house with large windows">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 2.2 Crore</div>
+          <div class="card-title">Sea View Apartment, Clifton</div>
+          <div class="card-location">📍 Clifton Block 4, Karachi</div>
+          <div class="card-specs">
+            <span><strong>2200</strong> sq ft</span>
+            <span><strong>3</strong> bed</span>
+            <span><strong>3</strong> bath</span>
+          </div>
+        </div>
+      </a>
+ 
+      <a href="property.html" class="property-card reveal">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587854/pexels-photo-7587854.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Contemporary house with wooden terrace">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 3.1 Crore</div>
+          <div class="card-title">Family Bungalow, Gulshan-e-Iqbal</div>
+          <div class="card-location">📍 Gulshan-e-Iqbal, Karachi</div>
+          <div class="card-specs">
+            <span><strong>300</strong> sq yd</span>
+            <span><strong>4</strong> bed</span>
+            <span><strong>3</strong> bath</span>
+          </div>
+        </div>
+      </a>
+ 
+    </div>
+  </div>
+</section>
+ 
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Why Aashiyana</div>
+        <h2>We show you the plan, not just the photos</h2>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature reveal">
+        <span class="num">01</span>
+        <h3>Verified paperwork</h3>
+        <p>Every listing is checked against its registry documents before it goes live — no disputed plots.</p>
+      </div>
+      <div class="feature reveal">
+        <span class="num">02</span>
+        <h3>Plain-language listings</h3>
+        <p>Area, dues, and possession dates written out clearly — no fine print hiding in a PDF.</p>
+      </div>
+      <div class="feature reveal">
+        <span class="num">03</span>
+        <h3>Local area teams</h3>
+        <p>A dedicated contact in DHA, Clifton, Gulshan and Bahria Town who can show you the block in person.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="cta-band">
+  <div class="container">
+    <h2>Have a plot to sell? List it with a team that verifies before it publishes.</h2>
+    <a href="contact.html" class="btn">List your property</a>
+  </div>
+</section>
+ 
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">Aashiyana Estates</div>
+        <p class="about">A Karachi-based property listing service — verified homes, plainly described, from DHA to Bahria Town.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="listings.html">All listings</a></li>
+          <li><a href="property.html">Featured home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Areas</h4>
+        <ul>
+          <li>DHA Phase 6</li>
+          <li>Clifton</li>
+          <li>Gulshan-e-Iqbal</li>
+          <li>Bahria Town</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <ul>
+          <li>Shahrah-e-Faisal, Karachi</li>
+          <li>+92 21 3456 7890</li>
+          <li>hello@aashiyana.pk</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Aashiyana Estates</span>
+      <span>Built by Saad Sheikh</span>
+    </div>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>

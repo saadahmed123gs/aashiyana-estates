@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aashiyana Estates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 20 L20 8 L34 20"/>
+        <path d="M10 20 V33 H30 V20"/>
+        <path d="M17 33 V24 H23 V33"/>
+      </svg>
+      Aashiyana Estates
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Listings</a>
+      <a href="property.html">Featured</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn secondary">Enquire</a>
+  </div>
+</header>
+ 
+<div class="container">
+  <div class="eyebrow" style="margin-top:40px;">Get in touch</div>
+  <h1 style="font-family:var(--font-display); font-size:2.1rem; max-width:520px;">Tell us what you're looking for and which area you'd like to see first.</h1>
+ 
+  <div class="contact-wrap">
+    <form class="contact-form" id="enquiryForm">
+      <div class="form-row">
+        <label for="name">Full name</label>
+        <input type="text" id="name" required placeholder="Saad Sheikh">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-row">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" required placeholder="03XX XXXXXXX">
+      </div>
+      <div class="form-row">
+        <label for="interest">Interested area</label>
+        <select id="interest">
+          <option>DHA Phase 6</option>
+          <option>Clifton</option>
+          <option>Gulshan-e-Iqbal</option>
+          <option>Bahria Town</option>
+          <option>North Nazimabad</option>
+          <option>Defence</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us about your budget, timeline, or the listing you saw..."></textarea>
+      </div>
+      <button type="submit" class="btn gold" style="align-self:flex-start;">Send enquiry</button>
+      <p class="form-status" id="formStatus">Thanks — an area agent will call you within one business day.</p>
+    </form>
+ 
+    <aside class="contact-side">
+      <div class="blueprint-bg">
+        <div class="office-block">
+          <h4>Office</h4>
+          <p>2nd Floor, Progressive Plaza</p>
+          <p>Shahrah-e-Faisal, Karachi</p>
+        </div>
+        <div class="office-block">
+          <h4>Phone &amp; Email</h4>
+          <p>+92 21 3456 7890</p>
+          <p>hello@aashiyana.pk</p>
+        </div>
+        <div class="office-block">
+          <h4>Hours</h4>
+          <p>Mon – Sat, 11am – 7pm</p>
+          <p>Closed on Sundays</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 200 140" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--blue-deep); opacity:0.6;">
+            <path d="M10 120 L60 60 L110 120"/>
+            <path d="M25 120 V90 H95 V120"/>
+            <path d="M110 120 L150 40 L190 120"/>
+            <path d="M125 120 V80 H175 V120"/>
+          </svg>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+ 
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 Aashiyana Estates</span>
+      <span>Built by Saad Sheikh</span>
+    </div>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 

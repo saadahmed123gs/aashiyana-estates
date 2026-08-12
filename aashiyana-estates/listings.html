@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listings — Aashiyana Estates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 20 L20 8 L34 20"/>
+        <path d="M10 20 V33 H30 V20"/>
+        <path d="M17 33 V24 H23 V33"/>
+      </svg>
+      Aashiyana Estates
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="listings.html" class="active">Listings</a>
+      <a href="property.html">Featured</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn secondary">Enquire</a>
+  </div>
+</header>
+ 
+<div class="container" style="padding-top:40px;">
+  <div class="eyebrow">All plots</div>
+  <h1 style="font-family:var(--font-display); font-size:2rem; margin-bottom: 30px;">24 homes currently listed</h1>
+ 
+  <div class="filter-bar">
+    <div>
+      <label for="fLocation">Area</label>
+      <select id="fLocation">
+        <option value="">Any area</option>
+        <option>DHA Phase 6</option>
+        <option>Clifton</option>
+        <option>Gulshan-e-Iqbal</option>
+        <option>Bahria Town</option>
+        <option>North Nazimabad</option>
+        <option>Defence</option>
+      </select>
+    </div>
+    <div>
+      <label for="fType">Type</label>
+      <select id="fType">
+        <option value="">Any type</option>
+        <option>House</option>
+        <option>Apartment</option>
+        <option>Bungalow</option>
+        <option>Penthouse</option>
+      </select>
+    </div>
+    <div>
+      <label for="fBudget">Budget</label>
+      <select id="fBudget">
+        <option value="">Any budget</option>
+        <option>Under 2 Crore</option>
+        <option>2-4 Crore</option>
+        <option>Above 4 Crore</option>
+      </select>
+    </div>
+    <button class="reset" id="resetFilters">Reset filters</button>
+  </div>
+</div>
+ 
+<section class="section" style="padding-top:0;">
+  <div class="container">
+ 
+    <div class="card-grid" id="cardGrid">
+ 
+      <a href="property.html" class="property-card reveal" data-location="DHA Phase 6" data-type="House" data-budget="Above 4 Crore">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587880/pexels-photo-7587880.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern villa exterior with green lawn">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 4.5 Crore</div>
+          <div class="card-title">Modern Villa, DHA Phase 6</div>
+          <div class="card-location">📍 DHA Phase 6, Karachi</div>
+          <div class="card-specs"><span><strong>350</strong> sq yd</span><span><strong>5</strong> bed</span><span><strong>4</strong> bath</span></div>
+        </div>
+      </a>
+ 
+      <a href="property.html" class="property-card reveal" data-location="Clifton" data-type="Apartment" data-budget="2-4 Crore">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587882/pexels-photo-7587882.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleek modern house with large windows">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 2.2 Crore</div>
+          <div class="card-title">Sea View Apartment, Clifton</div>
+          <div class="card-location">📍 Clifton Block 4, Karachi</div>
+          <div class="card-specs"><span><strong>2200</strong> sq ft</span><span><strong>3</strong> bed</span><span><strong>3</strong> bath</span></div>
+        </div>
+      </a>
+ 
+      <a href="property.html" class="property-card reveal" data-location="Gulshan-e-Iqbal" data-type="Bungalow" data-budget="2-4 Crore">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587854/pexels-photo-7587854.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Contemporary house with wooden terrace">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 3.1 Crore</div>
+          <div class="card-title">Family Bungalow, Gulshan-e-Iqbal</div>
+          <div class="card-location">📍 Gulshan-e-Iqbal, Karachi</div>
+          <div class="card-specs"><span><strong>300</strong> sq yd</span><span><strong>4</strong> bed</span><span><strong>3</strong> bath</span></div>
+        </div>
+      </a>
+ 
+      <a href="property.html" class="property-card reveal" data-location="Bahria Town" data-type="Apartment" data-budget="Under 2 Crore">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587879/pexels-photo-7587879.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stylish outdoor terrace and dining space">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 1.8 Crore</div>
+          <div class="card-title">Luxury Flat, Bahria Town</div>
+          <div class="card-location">📍 Bahria Town, Karachi</div>
+          <div class="card-specs"><span><strong>1800</strong> sq ft</span><span><strong>3</strong> bed</span><span><strong>2</strong> bath</span></div>
+        </div>
+      </a>
+ 
+      <a href="property.html" class="property-card reveal" data-location="North Nazimabad" data-type="House" data-budget="2-4 Crore">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7587856/pexels-photo-7587856.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Contemporary house surrounded by trees">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 2.5 Crore</div>
+          <div class="card-title">Corner House, North Nazimabad</div>
+          <div class="card-location">📍 North Nazimabad, Karachi</div>
+          <div class="card-specs"><span><strong>240</strong> sq yd</span><span><strong>4</strong> bed</span><span><strong>3</strong> bath</span></div>
+        </div>
+      </a>
+ 
+      <a href="property.html" class="property-card reveal" data-location="Defence" data-type="Penthouse" data-budget="Above 4 Crore">
+        <div class="card-thumb">
+          <span class="tag">For Sale</span>
+          <img src="https://images.pexels.com/photos/7546776/pexels-photo-7546776.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern house with wide patio and landscaped backyard">
+        </div>
+        <div class="card-body">
+          <div class="card-price">PKR 5.8 Crore</div>
+          <div class="card-title">Sky Penthouse, Defence</div>
+          <div class="card-location">📍 Defence Phase 2, Karachi</div>
+          <div class="card-specs"><span><strong>3000</strong> sq ft</span><span><strong>4</strong> bed</span><span><strong>4</strong> bath</span></div>
+        </div>
+      </a>
+ 
+    </div>
+ 
+    <p class="empty-state" id="emptyState">No listings match those filters yet — try widening your search.</p>
+ 
+  </div>
+</section>
+ 
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 Aashiyana Estates</span>
+      <span>Built by Saad Sheikh</span>
+    </div>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
